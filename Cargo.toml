@@ -14,14 +14,17 @@ documentation = "https://docs.rs/awmp"
 default = ["v2"]
 v1 = ["actix-web-v1", "futures-v01", "actix-multipart-v01"]
 v2 = ["actix-web-v2", "futures-v03", "actix-multipart-v02"]
+v3 = ["actix-web-v3", "futures-v03", "actix-multipart-v03"]
 
 [dependencies]
 actix-web-v1 = { version = "1", package = "actix-web", optional = true }
 actix-web-v2 = { version = "2", package = "actix-web", optional = true }
+actix-web-v3 = { version = "3.0.0-beta.1", package = "actix-web", optional = true }
 futures-v01 = { version = "0.1", package = "futures", optional = true }
 futures-v03 = { version = "0.3", package = "futures", optional = true }
 actix-multipart-v01 = { version = "0.1", package = "actix-multipart", optional = true }
 actix-multipart-v02 = { version = "0.2", package = "actix-multipart", optional = true }
+actix-multipart-v03 = { version = "0.3.0-beta.1", package = "actix-multipart", optional = true }
 mime = "0.3"
 mime_guess = "2"
 tempfile = "3.1"

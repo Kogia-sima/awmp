@@ -1,5 +1,5 @@
 /*!
-A convenience library for working with multipart/form-data in [`actix-web`](https://docs.rs/actix-web) 1.x or 2.x.
+A convenience library for working with multipart/form-data in [`actix-web`](https://docs.rs/actix-web) 1.x, 2.x or 3.x.
 
 This library uses [`actix-multipart`](https://docs.rs/actix-multipart) internally, and is not a replacement
 for `actix-multipart`. It saves multipart file data to tempfiles and collects text data, handling all blocking I/O operations.
@@ -14,7 +14,7 @@ Provides some configuration options in [PartsConfig](struct.PartsConfig.html):
 
 # Usage
 
-This crate supports both major versions of `actix-web`, 1.x and 2.x. It supports 2.x by default.
+This crate supports both major versions of `actix-web`, 1.x, 2.x and 3.x. It supports 2.x by default.
 
 To use with `actix-web` 1.x, add the following to your `Cargo.toml`:
 
@@ -70,6 +70,9 @@ pub mod v1;
 
 #[cfg(feature = "v2")]
 pub mod v2;
+
+#[cfg(feature = "v3")]
+pub mod v3;
 
 /// Error container
 #[derive(Debug)]

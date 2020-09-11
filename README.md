@@ -3,7 +3,7 @@
 [![Docs](https://docs.rs/awmp/badge.svg)](https://docs.rs/crate/awmp/)
 [![Crates.io](https://img.shields.io/crates/v/awmp.svg)](https://crates.io/crates/awmp)
 
-A convenience library for working with multipart/form-data in [`actix-web`](https://docs.rs/actix-web) 1.x, 2.x or 3.0.0-beta.
+A convenience library for working with multipart/form-data in [`actix-web`](https://docs.rs/actix-web) 1.x, 2.x or 3.x.
 
 This library uses [`actix-multipart`](https://docs.rs/actix-multipart) internally, and is not a replacement
 for `actix-multipart`. It saves multipart file data to tempfiles and collects text data, handling all blocking I/O operations.
@@ -18,7 +18,7 @@ Provides some configuration options in [PartsConfig](struct.PartsConfig.html):
 
 ## Usage
 
-This crate supports both major versions of `actix-web`, 1.x, 2.x and 3.0.0-beta. It supports 2.x by default.
+This crate supports both major versions of `actix-web`, 1.x, 2.x and 3.x. It supports 2.x by default.
 
 To use with `actix-web` 1.x, add the following to your `Cargo.toml`:
 
